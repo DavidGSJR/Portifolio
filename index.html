@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"  />
+
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/acordeon.css">
+    <link rel="stylesheet" href="style/me.css">
+    <link rel="stylesheet" href="style/portifolio.css">
+    <link rel="stylesheet" href="style/experience.css">
+    <link rel="stylesheet" href="style/skills.css">
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <img class="foto" src="image/me.jpeg" alt="Minha Foto" />
+
+            <h1 class="title">
+                Olá,<br />
+                eu sou David G da Silva Junior
+            </h1>
+            <div class="sobre">
+                <p class="linkedin">
+                    <a href="https://www.linkedin.com/in/david-junior99/" target="_blank">Linkedin</a>
+                </p>
+                <p class="github">
+                    <a href="https://github.com/DavidGSJR" target="_blank">GitHub</a>
+                </p>
+                <p class="phone">
+                    <a href="tel:(61) 99558-9192" target="_blank">(61) 99558-9192</a>
+                </p>
+                <p class="email">
+                    <a href="mailto:davidjunior0805@gmail.com" target="_blank">davidjunior0805@gmail.com</a>
+                </p>
+            </div>
+        </header>
+
+        <section class="acordeon">
+            <button class="trigger" type="button"><h2>Sobre mim</h2></button>
+            <div class="content">
+                <p class="me">Eu sou o David Gonçalves da Silva Junior, estou cursando Análise e Desenvolvimento de Sistemas na UCB. Estou sempre procurando oportunidades para aprimorar meus conhecimentos através de cursos profissionalizantes e projetos pessoais. Conhecimento em HTML, CSS, Bootstrap, JavaScript e conhecimento prévio em banco de dados. Tecnologia é minha paixão e sempre procuro partilhar o meu conhecimento e experiência, pois acredito que 'Ajudar os outros é ajudar a si próprio'.</p>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button"><h2>Skills</h2></button>
+            <div class="content">
+                <div class="skills">
+                    <section class="tools">
+                        <h3>Hard Skills:</h3>
+                        <ul>
+                            <li><img src="image/html.png" alt="html" title="HTML"></li>
+                            <li><img src="image/css.png" alt="css" title="CSS"></li>
+                            <li><img src="image/js.png" alt="javascript" title="JavaScript"></li>
+                            <li><img src="image/mysql.png" alt="mysql" title="MySql"></li>
+                        </ul>
+                    </section>
+                    <section class="personal">
+                        <h3>Soft Skills:</h3>
+                        <ul>
+                            <li>Gerenciamento de tempo</li>
+                            <li>autoaprendizagem</li>
+                            <li>Responsabilidade</li>
+                            <li>Habilidades de resolução de problemas e pensamento crítico</li>
+                            <li>Flexibilidade</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button"><h2>Projetos</h2></button>
+            <div class="content">
+                <ul class="portifolio">
+                    <li>
+                        <h3 class="title github">Criando um site de vendas online (Front-end)</h3>
+                        <a href="https://davidgsjr.github.io/Projeto_ShoesTrendV2/" target="_blank">Site Shoes Trend (Front-end)</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button"><h2>Cursos</h2></button>
+            <div class="content">
+                <ul class="experience">
+                    <li>
+                        <h3 class="title">ETB - Técnico em Informática</h3>
+                        <p class="period">07/2018 – 09/2022</p>
+                        <h4>Curso Técnico que adquiri as seguinte competências: </h4>
+                            <ul>
+                                <li><strong>Uso e gestão de computadores e sistemas operacionais</strong>: Operação de computadores e sistemas operacionais, Instalação e manutenção de computadores.</li>
+                                <li><strong>Metodologias de desenvolvimento de sistemas</strong>: Lógica, algoritmos e métodos de desenvolvimento de aplicativos.</li>
+                                <li><strong>Redes de computadores</strong>: Instalação, configuração e operação dos serviços da rede.</li>
+                                <li><strong>Suporte ao usuário</strong>: Documentação técnica, aplicação de técnicas de treinamento, atendimento e suporte ao usuário.</li>
+                            </ul>
+                        
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        
+
+    </div>
+    <script src="/js/acordeon.js"></script>
+</body>
+
+</html>
