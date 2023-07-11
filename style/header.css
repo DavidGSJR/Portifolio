@@ -1,0 +1,70 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header .foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.header .title{
+    font-family: "Neue Machina";
+    text-align: center;
+}
+.sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.sobre p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .5rem;
+    font-size: 1.125rem;
+}
+.sobre p::before{
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+.sobre .linkedin::before{
+    background-image: url("/image/linkedin.png");
+}
+.sobre .github::before{
+    background-image: url("/image/icon_github.png");
+}
+.sobre .email::before{
+    background-image: url("/image/email.png");
+}
+.sobre .phone::before{
+    background-image: url("/image/phone.png");
+}
+
+@media only screen and (min-width: 768px){
+    .header{
+        display: grid;
+        grid-template-areas: 
+        "foto title"
+        "foto sobre"
+        ;
+    }
+    .header .foto{
+        grid-area: foto;
+        margin: 0 auto;
+    }
+    .header .title{
+        grid-area: title;
+        text-align: start;
+        max-width: 220px;
+    }
+    .header .sobre{
+        grid-area: sobre;
+    }
+}
